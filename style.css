@@ -139,8 +139,10 @@ margin-left: 60px;
 
 }
 .slc{
-    height: 1000px;
-    width: 2000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 .clientsheader{
     font-size: 100px;
@@ -154,41 +156,17 @@ margin-left: 60px;
     text-align: center;
 }
 
-@media screen and (max-width: 1440px) {
-    .-header-text {
-      font-size: 50px;
-      font-weight: 500px;
-    }
-    .-home-btn {
-      width: 100%;
-      text-align: center;
-      padding: 36px 0px 0px 0px;
-    }
-    .-school-logo {
-      text-align: center;
-      margin-top: 15vh;
-      display: flex;
-      flex-direction: column;
-      padding-top: 0px;
-    }
-    .-school-logo .-img {
-      height: 200px;
-      margin-top: 5vh;
-    }
-    .-school-logo {
-      text-align: center;
-      margin-top: 15vh;
-      display: flex;
-      flex-direction: column;
-      padding-top: 0px;
-    }
-    .-cust-logos {
-      height: 100px !important;
-      margin: 30px;
-    }
-    .-cust-container{
-      padding: 50px;
-    }
-  }
+.c{
+  color:transparent
+}
+.cliente{
+  float: left;
+  width: 10%;
 
+  padding: 5px;
+  display: block;
+  margin-left: 40px;
+  margin-right: auto;
+
+}
   
