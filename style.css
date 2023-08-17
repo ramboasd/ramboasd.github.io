@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
 
   @keyframes fade-inout{
     0%{opacity: 1; transform: translate(1px) scale(1);}
@@ -8,6 +7,10 @@
 
   .fade{
     animation: fade-inout 1.5s alternate-reverse;
+    font-size: 3.5em;
+}
+.fade2{
+    animation: fade-inout 0s alternate-reverse;
     font-size: 5em;
 }
 
@@ -19,31 +22,114 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+
 .body {
-    min-height: 180vh;
-    background: url('pics/aldous.png') no-repeat;
-    background-color: aqua;
+    min-height: 100vh;
+    /*background: url('pics/aldous.png') no-repeat;*/
+
+   
     background-size: cover;
     background-position: center;
+    text-align:left; 
+
+
 
 
 }
-.red{
-    color: red;
-    font-weight: bold;
+.flex{
+    display: flex;
+    text-align: center;
+}
+.qoute1{
+    font-size:40px ;
+    color: purple;
+}
+.qoute2{
+    font-size:40px ;
+    color: green;
+}
+.qoute3{
+    font-size:40px ;
+    color: black;
+}
+
+.cheat1{
+background-color: transparent;
+font-size: 120px;
 
 }
 
-.blue{
-    color: blue;
-    font-weight: bold;
+.test{
 
+margin: auto;
+  width: 100%;
+  border: 3px solid black;
+  padding: 10px;
+  display:flex;
+  border-radius: 10px;
 }
-.logo p{
+.logo {
     display: inline-block;
     vertical-align: top;
     
 }
+.logo2{
+   
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+}
+
+.sizesize{
+    
+    border-radius: 4px;
+
+    width: 700px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+
+    top: 90%;
+    left: 45%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border-radius: 5px;
+    width: 290px;
+    height: 75px;
+    color: black;
+    border: 2px solid #050505;
+    font-size: 22px;
+    position: relative;
+}
+
+.border{
+  
+    transform: translate(10%, 75%);
+    border-radius: 10px;
+    width: 1000px;
+    height:250px;
+    color: black;
+    border: 2px solid #050505;
+    font-size: 22px;
+    position: relative;
+}
+.border2{
+  
+    transform: translate(-6%, 350%);
+    border-radius: 10px;
+    width: 800px;
+    height:150px;
+    color: black;
+    border: 2px solid #050505;
+    font-size: 22px;
+    position: relative;
+}
+
 .header{
 
     position: fixed;
@@ -51,7 +137,7 @@
     left: 0;
     width: 100%;
     padding: 5px 100px;
-    background-color:rgb(26, 21, 21);
+    background-color:transparent;
     /* display flex - isang linya ng headers horizonal */
     display: flex;
     /* justify content - ihiwalay ang logo sa mga headers (home, contact, etc.) exmple: logo                home about etc. */
@@ -60,19 +146,6 @@
     z-index: 100;
   
 }
-div.code
-{
-  font-family: "Courier New", monospace;
-  white-space: pre;
-}
-
-.logo{
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-
-}
-
 header
 {
    
@@ -85,88 +158,31 @@ header
 
 }
 
-.img_logo{
-    width: 300px;
-}
-
 .navbar a{
-/*position relative - simpleng animation sa home yung puting linya. Remove mo kung  buong navbar may linya */
-position: relative;
-font-size: 15px;
-color:#fff;
-font-weight: 500;
-text-decoration: none;
-margin-left: 60px;
-
+    /*position relative - simpleng animation sa home yung puting linya. Remove mo kung  buong navbar may linya */
+    position: relative;
+    font-size: 20px;
+    color:black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 60px;
+    
 }
 
 .navbar a::before{
-    content:'';
-    position: absolute;
-    top:100%;
-    left: 0;
-    /*width 0 start animation */
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: .3s;
-
+        content:'';
+        position: absolute;
+        top:100%;
+        left: 0;
+        /*width 0 start animation */
+        width: 0;
+        height: 2px;
+        background: black;
+        transition: .3s;
+    
 }
-
-.navbar a:hover:before{
-    /*width 100 show animation */
-    width: 100%;
+    
+    .navbar a:hover:before{
+        /*width 100 show animation */
+        width: 100%;
 }
-
-.intro{
-    font-size: 100px;
-    color:white;
-}
-
-.details1{
-    font-size: 30px;
-    color:white;
-
-}
-
-.body2 {
-    min-height: 180vh;
-    background: url('pics/upsidedwon.png') no-repeat;
-    background-color: aqua;
-    background-size: cover;
-    background-position: center;
-
-
-}
-.slc{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-.clientsheader{
-    font-size: 100px;
-    color:black;
-    text-align: center;
-}
-
-.clientqoute{
-    font-size: 50px;
-    color:black;
-    text-align: center;
-}
-
-.c{
-  color:transparent
-}
-.cliente{
-  float: left;
-  width: 10%;
-
-  padding: 5px;
-  display: block;
-  margin-left: 40px;
-  margin-right: auto;
-
-}
-  
